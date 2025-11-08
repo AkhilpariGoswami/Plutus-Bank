@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.branding-section {
+    flex: 1;
+    background: linear-gradient(135deg, #1a73e8, #6c8ef5);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.account-number {
+    font-family: monospace;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding: 12px 15px;
+    background-color: #f0f4f8;
+    border-radius: 6px;
+    border: 1px solid #d0d7e2;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-dots {
+    font-family: monospace;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding: 12px 15px;
+    background-color: #f0f4f8;
+    border-radius: 6px;
+    border: 1px solid #d0d7e2;
+}
+
+.login-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #0d62d9;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.branding-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.branding-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.branding-content p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .login-section, .branding-section {
+        max-width: 100%;
+    }
+    
+    .branding-section {
+        order: -1;
+        padding: 30px 20px;
+    }
+}

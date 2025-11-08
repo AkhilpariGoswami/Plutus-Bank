@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plutus - Investments</title>
+    
+    <!-- Side bar  -->
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <script src="../script/sidebar.js" defer></script>
+    
+    <!-- Style  -->
+    <link rel="stylesheet" href="../css/investments.css">
+</head>
+<body>
+
+    <header id="sidebar-placeholder"></header>
+
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Investments</h1>
+            </div>
+            
+            <div class="investments-container">
+                <!-- Left Column -->
+                <div class="investments-left">
+                    <!-- Yearly Total Investment -->
+                    <div class="card yearly-investment">
+                        <div class="section-title">Yearly total investment</div>
+                        
+                        <div class="year-selector">
+                            <button class="year-btn">2017</button>
+                            <button class="year-btn">2018</button>
+                            <button class="year-btn">2019</button>
+                            <button class="year-btn">2020</button>
+                            <button class="year-btn active">2021</button>
+                            <button class="year-btn">2022</button>
+                        </div>
+                        
+                        <div class="chart-placeholder">
+                            Investment Chart Visualization
+                        </div>
+                    </div>
+                    
+                    <!-- My Investments -->
+                    <div class="card">
+                        <div class="section-title">My investment</div>
+                        
+                        <div class="investments-grid">
+                            <!-- Apple Market Investment -->
+                            <div class="investment-card">
+                                <div class="investment-header">
+                                    <div class="investment-name">Apple Market</div>
+                                    <div class="investment-category">Ecommerce, Marketplace</div>
+                                </div>
+                                
+                                <div class="investment-details">
+                                    <div class="investment-value">
+                                        <div class="value-amount">$200.00</div>
+                                        <div class="value-label">Investment value</div>
+                                    </div>
+                                    
+                                    <div class="return-value">
+                                        <div class="return-amount negative">-23%</div>
+                                        <div class="return-label">Return value</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Greenery Investment -->
+                            <div class="investment-card">
+                                <div class="investment-header">
+                                    <div class="investment-name">Greenery</div>
+                                    <div class="investment-category">Ecommerce, Marketplace</div>
+                                </div>
+                                
+                                <div class="investment-details">
+                                    <div class="investment-value">
+                                        <div class="value-amount">$200.00</div>
+                                        <div class="value-label">Investment value</div>
+                                    </div>
+                                    
+                                    <div class="return-value">
+                                        <div class="return-amount neutral">0%</div>
+                                        <div class="return-label">Return value</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="investments-right">
+                    <!-- Yearly Total Revenue -->
+                    <div class="card yearly-revenue">
+                        <div class="section-title">Yearly total revenue</div>
+                        
+                        <div class="year-selector">
+                            <button class="year-btn">2017</button>
+                            <button class="year-btn">2018</button>
+                            <button class="year-btn">2019</button>
+                            <button class="year-btn">2020</button>
+                            <button class="year-btn active">2021</button>
+                            <button class="year-btn">2022</button>
+                        </div>
+                        
+                        <div class="chart-placeholder">
+                            Revenue Chart Visualization
+                        </div>
+                    </div>
+                    
+                    <!-- Trending Stock -->
+                    <div class="card trending-stocks">
+                        <div class="section-title">Trending stock</div>
+                        
+                        <table class="stocks-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Return</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="stock-name">Coingpace</td>
+                                    <td class="stock-price">$100</td>
+                                    <td class="stock-return positive">~ +10%</td>
+                                </tr>
+                                <tr>
+                                    <td class="stock-name">DocSign</td>
+                                    <td class="stock-price">$100</td>
+                                    <td class="stock-return negative">~ -8%</td>
+                                </tr>
+                                <tr>
+                                    <td class="stock-name">Target & Co.</td>
+                                    <td class="stock-price">$100</td>
+                                    <td class="stock-return positive">~ +10%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

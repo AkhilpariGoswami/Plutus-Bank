@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plutus - Transfer</title>
+    
+    <!-- Side bar  -->
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <script src="../script/sidebar.js" defer></script>
+    
+    <!-- Style  -->
+    <link rel="stylesheet" href="../css/transfer.css">
+</head>
+<body>
+
+    <header id="sidebar-placeholder"></header>
+
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Transfer to</h1>
+            </div>
+            
+            <div class="transfer-container">
+                <!-- Transfer Form Section -->
+                <div class="transfer-form-section">
+                    <div class="card">
+                        <!-- Transfer Tabs -->
+                        <div class="transfer-tabs">
+                            <div class="tab active">Own account</div>
+                            <div class="tab">Other account</div>
+                        </div>
+                        
+                        <!-- Transfer Form -->
+                        <form>
+                            <div class="form-group">
+                                <label for="beneficiary" class="required">Beneficiary</label>
+                                <input type="text" id="beneficiary" class="form-input" placeholder="Select beneficiary">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="iban" class="required">IBAN</label>
+                                <input type="text" id="iban" class="form-input" placeholder="Enter IBAN">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="amount" class="required">Amount</label>
+                                <div class="amount-input">
+                                    <span class="currency">USD</span>
+                                    <input type="text" id="amount" class="form-input" value="0.00">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date" class="required">Date</label>
+                                <input type="date" id="date" class="form-input date-input">
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="section-title">Other data</div>
+                            
+                            <div class="form-group">
+                                <label for="purpose">Transfer purpose</label>
+                                <input type="text" id="purpose" class="form-input" placeholder="Enter transfer purpose">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="beneficiary-name">Beneficiary's name</label>
+                                <input type="text" id="beneficiary-name" class="form-input" placeholder="Enter beneficiary name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="beneficiary-email">Beneficiary's email</label>
+                                <input type="email" id="beneficiary-email" class="form-input" placeholder="Enter beneficiary email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="payer-reference">Payer's reference</label>
+                                <input type="text" id="payer-reference" class="form-input" placeholder="Enter reference">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="beneficiary-info">Information for beneficiary</label>
+                                <textarea id="beneficiary-info" class="form-input" rows="3" placeholder="Enter information for beneficiary"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Payer Section -->
+                <div class="payer-section">
+                    <div class="card">
+                        <div class="section-title">Select payer</div>
+                        
+                        <!-- Payer Account -->
+                        <div class="payer-account">
+                            <div class="account-type">Checking Account</div>
+                            <div class="account-balance">USD 10,000.00</div>
+                            <div class="account-detail">IBAN: AB11 0000 0000 1111 1111</div>
+                            <div class="account-detail">Account owner: Nicola Rich</div>
+                            
+                            <div class="account-actions">
+                                <button class="action-btn">Share IBAN</button>
+                                <button class="action-btn">Request payment</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Saved Beneficiaries -->
+                        <div class="beneficiaries-section">
+                            <div class="beneficiaries-title">Saved Beneficiaries</div>
+                            <ul class="beneficiaries-list">
+                                <li class="beneficiary-item">
+                                    <div class="beneficiary-name">Add New Payee</div>
+                                </li>
+                                <li class="beneficiary-item">
+                                    <div class="beneficiary-name">Maria Payee</div>
+                                </li>
+                                <li class="beneficiary-item">
+                                    <div class="beneficiary-name">Leonard Smith</div>
+                                </li>
+                                <li class="beneficiary-item">
+                                    <div class="beneficiary-name">Clara Wills</div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Footer Actions -->
+                        <div class="footer-actions">
+                            <a href="#" class="secondary-link">
+                                <span>Settings</span>
+                            </a>
+                            <a href="#" class="secondary-link">
+                                <span>Log out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
